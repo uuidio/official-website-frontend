@@ -9,7 +9,7 @@
           <p s style="font-size: 20PX;font-weight:bold;text-align: center;margin-bottom: 18PX;"><span class="square"></span>
              核心专利技术</p>
           <img src="https://rescdn.www.smartconns.com/assets/img/02_point_01.png" alt="">
-          <p style="color: #a9a9a9;font-size: 12PX;text-align: left;"> 基于LiFi可见光定位的智能购物车，极汇已累计获取近30项专利技术</p>
+          <p style="color: #a9a9a9;font-size: 12PX;text-align: left;"> 基于LiFi可见光定位的智能购物车，播丫已累计获取近30项专利技术</p>
         </div>
         <div style="width: 240PX;float: left;">
           <p s style="font-size: 20PX;font-weight:bold;text-align: center;margin-bottom: 18PX;"><span class="square"></span> 最优防损方案

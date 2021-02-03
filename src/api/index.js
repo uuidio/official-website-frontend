@@ -3,7 +3,6 @@
 // 引用axios
 var axios = require('axios')
 function apiAxios (obj, method, url, params, success, failure, errorFunctionAndRefreshToken) {
-    console.log(method)
     axios({
         headers: {
             'Content-Type': 'application/json;charset=UTF-8',

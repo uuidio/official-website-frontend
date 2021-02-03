@@ -46,7 +46,7 @@
     </div>
 
     <div style="text-align:center;margin-top: 100PX;">
-      <p class="nav_title">极汇购 – 商超智能购物车解决方案提供商</p>
+      <p class="nav_title">播丫购 – 商超智能购物车解决方案提供商</p>
       <div><img src="https://rescdn.www.smartconns.com/assets/img/01_title_line.png" alt=""></div>
       <video src="https://rescdn.www.smartconns.com/assets/img/01_video.mp4" controls="controls" style="margin-top: 80PX;width: 1200PX;">您的浏览器不支持视频播放</video>
     </div>

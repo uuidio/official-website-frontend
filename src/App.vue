@@ -1,57 +1,57 @@
 <template>
   <div id="app">
-    <div class="header" style="width: 1200px;margin: 0 auto">
-      <div class="logo">
-        <img src="https://rescdn.www.smartconns.com/assets/img/01_logo.png" alt="智能购物车" title="智能购物车">
-      </div>
-      <div class="nav_list">
-        <ul>
-          <li v-for="(item,index) in nav" :class="c_index==index?'active':''" @click="go_path(item.path,index)">
-            {{item.name}}
-          </li>
-        </ul>
-      </div>
-    </div>
+<!--    <div class="header" style="width: 1200px;margin: 0 auto">-->
+<!--      <div class="logo">-->
+<!--        <img src="@/assets/image/01_logo.png" alt="智能购物车" title="智能购物车" style="width:178px;margin-top: 10px">-->
+<!--      </div>-->
+<!--      <div class="nav_list">-->
+<!--        <ul>-->
+<!--          <li v-for="(item,index) in nav" :class="c_index==index?'active':''" @click="go_path(item.path,index)">-->
+<!--            {{item.name}}-->
+<!--          </li>-->
+<!--        </ul>-->
+<!--      </div>-->
+<!--    </div>-->
     <keep-alive>
       <router-view v-on:listenToChildEvent="showMsgfromChild"/>
     </keep-alive>
-    <div class="footer" style="width: 100%;min-width: 1200px;">
-      <div style="width: 1200px;margin: 0 auto;padding: 1px 0 30px 0; " class="clearfix">
-        <div class="nav_list" style="color: #fff">
-          <div style="margin-top: 30px;">
-            <ul>
-              <li v-for="(item,index) in nav" :key="index" :class="c_index==index?'active':''"
-                  @click="go_path(item.path,index)">{{item.name}}
-              </li>
-            </ul>
-          </div>
-          <div style="clear: both;"></div>
-          <div class="info" style="margin-top: 30px;margin-left: 30px;width:1200px;position: relative;">
-            <div style="float: left;">
-              <div><img src="https://rescdn.www.smartconns.com/assets/img/01_footer_address.png" alt=""
-                        style="width: 20px;margin-top: -5px;vertical-align: middle;"> <span>广州黄埔区科学大道中科汇金谷一街12号6楼</span>
-              </div>
-              <div><img src="https://rescdn.www.smartconns.com/assets/img/01_footer_tel.png" alt=""
-                        style="width: 20px;margin-top: -5px;vertical-align: middle;"> <span>Tel：020-3203 3815</span>
-              </div>
-              <div><img src="https://rescdn.www.smartconns.com/assets/img/01_footer_email.png" alt=""
-                        style="width: 20px;margin-top: -5px;vertical-align: middle;">
-                <span>service@smartconns.com</span></div>
-              <div>粤ICP备13090180号 <img src="https://rescdn.www.smartconns.com/assets/img/01_jinghui.png" alt=""
-                                       style="width: 16px;margin-top: -4px;vertical-align: middle;"> <span>粤公网安备 44011602000376号</span>
-              </div>
-            </div>
-            <div style="float: right;width:200px;margin-right:20px;margin-top: -59px;"><img
-              src="https://rescdn.www.smartconns.com/assets/img/01_footer_code.png" alt="">
-              <br>
-              <p style="text-align: center;">极汇科技</p></div>
-            <div style="color: #666;position: absolute;top: -69px;right: 396px;"><span>友情链接</span> <span
-              @click="post100" class="pointme" style="color: #333;margin-left: 16px;cursor: pointer;">快递100</span></div>
-            <div style="clear: both;"></div>
-          </div>
-        </div>
-      </div>
-    </div>
+<!--    <div class="footer" style="width: 100%;min-width: 1200px;">-->
+<!--      <div style="width: 1200px;margin: 0 auto;padding: 1px 0 30px 0; " class="clearfix">-->
+<!--        <div class="nav_list" style="color: #fff">-->
+<!--          <div style="margin-top: 30px;">-->
+<!--            <ul>-->
+<!--              <li v-for="(item,index) in nav" :key="index" :class="c_index==index?'active':''"-->
+<!--                  @click="go_path(item.path,index)">{{item.name}}-->
+<!--              </li>-->
+<!--            </ul>-->
+<!--          </div>-->
+<!--          <div style="clear: both;"></div>-->
+<!--          <div class="info" style="margin-top: 30px;margin-left: 30px;width:1200px;position: relative;">-->
+<!--            <div style="float: left;">-->
+<!--              <div><img src="https://rescdn.www.smartconns.com/assets/img/01_footer_address.png" alt=""-->
+<!--                        style="width: 20px;margin-top: -5px;vertical-align: middle;"> <span>广州天河区元岗路616-3</span>-->
+<!--              </div>-->
+<!--              <div><img src="https://rescdn.www.smartconns.com/assets/img/01_footer_tel.png" alt=""-->
+<!--                        style="width: 20px;margin-top: -5px;vertical-align: middle;"> <span>Tel：020-3203 3815</span>-->
+<!--              </div>-->
+<!--              <div><img src="https://rescdn.www.smartconns.com/assets/img/01_footer_email.png" alt=""-->
+<!--                        style="width: 20px;margin-top: -5px;vertical-align: middle;">-->
+<!--                <span>service@smartconns.com</span></div>-->
+<!--              <div>粤ICP备2021008656号-1 <img src="https://rescdn.www.smartconns.com/assets/img/01_jinghui.png" alt=""-->
+<!--                                       style="width: 16px;margin-top: -4px;vertical-align: middle;"> <span>粤公网安备 44011602000376号</span>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <div style="float: right;width:200px;margin-right:20px;margin-top: -59px;"><img-->
+<!--              src="https://rescdn.www.smartconns.com/assets/img/01_footer_code.png" alt="">-->
+<!--              <br>-->
+<!--              <p style="text-align: center;">播丫科技</p></div>-->
+<!--            <div style="color: #666;position: absolute;top: -69px;right: 396px;"><span>友情链接</span> <span-->
+<!--              @click="post100" class="pointme" style="color: #333;margin-left: 16px;cursor: pointer;">快递100</span></div>-->
+<!--            <div style="clear: both;"></div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
   </div>
 </template>
 <script>
@@ -123,7 +123,7 @@ export default {
                 this.c_index = index
             }
         })
-        // alert(this.pc_or_mobile())
+        this.$store.commit('pc_or_mobile', this.pc_or_mobile())
     },
     mounted () {
         // window.onresize = function () {

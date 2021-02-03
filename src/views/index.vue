@@ -1,121 +1,131 @@
 <template>
-  <div class="home" style="width: 1200px;margin: 0 auto">
-    <div class="block">
-      <el-carousel height="484px" arrow="always" trigger="click">
-        <el-carousel-item v-for="item in banner_list"><img :src="'http://rescdn.www.smartconns.com/' + item.pic" alt=""></el-carousel-item>
-      </el-carousel>
-    </div>
-
-    <div style="width: 880px;margin: 40px auto;overflow: hidden;">
-      <div style="width: 260px;float: left;">
-        <img src="https://rescdn.www.smartconns.com/assets/img/01_data_01.png" alt="">
-        <p style="color: #7637ff;font-size: 48px;font-weight: bold;text-align: center;">11000万</p>
-        <p style="color: #a9a9a9;font-size: 16px;text-align: center;">累计订单交易额（元）</p>
-      </div>
-      <div style="width: 260px;float: right;">
-        <img src="https://rescdn.www.smartconns.com/assets/img/01_data_02.png" alt="">
-        <p style="color: #f000ed;font-size: 48px;font-weight: bold;text-align: center;">92万</p>
-        <p style="color: #a9a9a9;font-size: 16px;text-align: center;">累计订单交易量（笔）</p>
-      </div>
-    </div>
-    <div style="text-align:center;margin-top: 80px;overflow: hidden;">
-      <div style="width: 300px;float: left;">
-        <img src="https://rescdn.www.smartconns.com/assets/img/01_data_06.png" alt="">
-        <p style="color:#07b2e2;font-size: 48px;font-weight: bold;text-align: center;">680691</p>
-        <p style="color: #a9a9a9;font-size: 16px;text-align: center;">会员总数</p>
-      </div>
-      <div style="width: 300px;float: left;">
-        <img src="https://rescdn.www.smartconns.com/assets/img/01_data_03.png" alt="">
-        <p style="color:#07b2e2;font-size: 48px;font-weight: bold;text-align: center;">120.65</p>
-        <p style="color: #a9a9a9;font-size: 16px;text-align: center;">平均客单价（元）</p>
-      </div>
-      <div style="width: 300px;float: left;">
-        <img src="https://rescdn.www.smartconns.com/assets/img/01_data_04.png" alt="">
-        <p style="color:#07b2e2;font-size: 48px;font-weight: bold;text-align: center;">4800</p>
-        <p style="color: #a9a9a9;font-size: 16px;text-align: center;">投入设备总数（台）</p>
-      </div>
-      <div style="width: 300px;float: left;">
-        <img src="https://rescdn.www.smartconns.com/assets/img/01_data_05.png" alt="智能购物车" title="智能购物车">
-        <p style="color:#07b2e2;font-size: 48px;font-weight: bold;text-align: center;">95%</p>
-        <p style="color: #a9a9a9;font-size: 16px;text-align: center;">每天设备使用率</p>
-      </div>
-    </div>
-
-    <div style="text-align:center;margin-top: 100px;">
-      <p class="nav_title">极汇购 – 商超智能购物车解决方案提供商</p>
-      <div><img src="https://rescdn.www.smartconns.com/assets/img/01_title_line.png" alt=""></div>
-      <video src="https://rescdn.www.smartconns.com/assets/img/01_video.mp4" controls="controls" style="margin-top: 80px;width: 1200px;">您的浏览器不支持视频播放</video>
-    </div>
-
-    <div style="text-align:center;margin-top: 100px;">
-      <h2>智能购物车应用价值</h2>
-      <div><img src="https://rescdn.www.smartconns.com/assets/img/01_title_line.png" alt=""></div>
-      <div><img src="https://rescdn.www.smartconns.com/assets/img/01_value_01.png" alt="" style="margin-top: 80px;"></div>
-      <div style="text-align:center;margin-top: 80px;overflow: hidden;">
-        <div style="width: 400px;float: left;">
-          <img src="https://rescdn.www.smartconns.com/assets/img/01_value_02.png" alt="" style="float: left;">
-          <div style="float: left;width: 250px">
-          <p style="font-size: 24px;font-weight: bold;text-align: left;"><span class="square" style="margin-right: 10px;"></span>降低成本</p>
-          <p style="color: #a9a9a9;font-size: 16px;text-align: left;margin-top: 10px;line-height: 29px;">降低30-60%的收银人力成本
-            <br>
-            省掉部分纸质宣传物料费用</p>
-          </div>
+  <div>
+    <div class="center">
+      <div class="top" style="width: 1200px;margin: 0 auto">
+        <div class="top1">
+          <img src="../assets/image/图层25拷贝.png" />
         </div>
-        <div style="width: 400px;float: left;">
-          <img src="https://rescdn.www.smartconns.com/assets/img/01_value_03.png" alt="" style="float: left;">
-          <div style="float: left;width: 250px">
-            <p style="font-size: 24px;font-weight: bold;text-align: left;"><span class="square" style="margin-right: 10px;"></span>增效</p>
-            <p style="color: #a9a9a9;font-size: 16px;text-align: left;margin-top: 10px;line-height: 29px;">提升人效、坪效 <br> 提高10%以上客单价 <br> 广告营销收入增加20%</p>
-          </div>
+        <div class="top2">
+          <ul>
+            <li class="top2_1">首页</li>
+            <li>播丫产品 <img src="../assets/image/矢量智能对象.png" /></li>
+            <li>解决方案</li>
+            <li>商务合作</li>
+            <li>新闻资讯</li>
+            <li>疑问解答</li>
+            <li>关于播丫</li>
+          </ul>
         </div>
-        <div style="width: 400px;float: left;">
-          <img src="https://rescdn.www.smartconns.com/assets/img/01_value_04.png" alt="" style="float: left;">
-          <div style="float: left;width: 250px">
-            <p style="font-size: 24px;font-weight: bold;text-align: left;"><span class="square" style="margin-right: 10px;"></span>提升购物体验</p>
-            <p style="color: #a9a9a9;font-size: 16px;text-align: left;margin-top: 10px;line-height: 29px;">自助结算 <br>
-              免排队<br>
-              智能导购<br>
-              个性化促销推荐</p>
-          </div>
+        <div class="top3">
+          <ul>
+            <li class="top3_1">登录</li>
+            <li class="top3_2">免费试用</li>
+          </ul>
         </div>
       </div>
-    </div>
-
-    <div style="text-align:center;margin-top: 100px;">
-      <h2>资讯中心</h2>
-      <div><img src="https://rescdn.www.smartconns.com/assets/img/01_title_line.png" alt=""></div>
-      <div class="hover_blue" style="margin-top: 80px;">
-        <div @click="go_art_path('/news_detail',item.id)" v-for="item in data_list"  style="float: left;width: 400px">
-          <div style="width: 300px;height: 300px;box-shadow: 1px 1px 16px #dddddd;overflow: hidden;margin: 0 auto;">
-<!--            <img src="https://rescdn.www.smartconns.com/assets/img/01-IMG_9105.png" alt="">-->
-            <img :src="'http://rescdn.www.smartconns.com/' + item.cover" alt="" style="height: 212px">
-            <div style="padding: 10px 10px 0 10px;">
-              <p style="text-align: left;font-size: 18px;">{{item.title}}</p>
-            </div>
-          </div>
+      <div>
+        <img src="../assets/image/图层26.png" />
+      </div>
+      <div class="middle1">
+        <div class="middle1_1">优视直播四大利器</div>
+        <div class="middle1_2"></div>
+        <div class="middle1_3">
+          <ul>
+            <li>
+              <div class="middle1_31"><img src="../assets/image/矢量智能对象(9).png" /></div>
+              <div class="middle1_32">智能直播设备</div>
+            </li>
+            <li>
+              <div class="middle1_31"><img src="../assets/image/矢量智能对象(10).png" /></div>
+              <div class="middle1_32">直播平台</div>
+            </li>
+            <li>
+              <div class="middle1_31"><img src="../assets/image/矢量智能对象(11).png" /></div>
+              <div class="middle1_32">小程序商城</div>
+            </li>
+            <li>
+              <div class="middle1_31"><img src="../assets/image/矢量智能对象(12).png" /></div>
+              <div class="middle1_32">营销套件</div>
+            </li>
+          </ul>
         </div>
       </div>
-      <div style="clear:both;"></div>
-      <div @click="go_path('/news')" style="width: 132px;height: 40px;text-align: center;border-radius: 40px;background-color: #00b0e1;font-size: 12px;line-height: 40px;color: #fff;margin: 80px auto;cursor: pointer;">查看更多</div>
-    </div>
-    <div style="text-align:center;margin-top: 100px;margin-bottom: 100px;">
-      <h2>合作伙伴</h2>
-      <div><img src="https://rescdn.www.smartconns.com/assets/img/01_title_line.png" alt=""></div>
-      <div class="clearfix" style="margin-top: 40px;">
-        <div v-for="item in partner_list" style="float: left;width: 240px;text-align: center;">
-          <img :src="'http://rescdn.www.smartconns.com/' + item.logoUrl">
+      <div class="middle2">
+        <div class="middle2_1">强大的直播运营工具</div>
+        <div class="middle2_2"></div>
+        <div class="middle2_3">
+          <ul>
+            <li>
+              <div><img src="../assets/image/矢量智能对象(1).png"  /></div>
+              <div class="middle2_31">引导页</div>
+            </li>
+            <li>
+              <div><img src="../assets/image/矢量智能对象(2).png"  /></div>
+              <div class="middle2_31">预告片</div>
+            </li>
+            <li>
+              <div><img src="../assets/image/矢量智能对象(3).png"  /></div>
+              <div class="middle2_31">图文介绍</div>
+            </li>
+            <li>
+              <div><img src="../assets/image/矢量智能对象(4).png"  /></div>
+              <div class="middle2_31">邀请排行榜</div>
+            </li>
+            <li>
+              <div><img src="../assets/image/矢量智能对象(5).png"  /></div>
+              <div class="middle2_31">微信分享</div>
+            </li>
+            <li>
+              <div><img src="../assets/image/矢量智能对象(6).png"  /></div>
+              <div class="middle2_31">预约观看</div>
+            </li>
+            <li>
+              <div><img src="../assets/image/矢量智能对象(7).png"  /></div>
+              <div class="middle2_31">开播提醒</div>
+            </li>
+            <li>
+              <div><img src="../assets/image/矢量智能对象(8).png"  /></div>
+              <div class="middle2_31">绿幕抠图</div>
+            </li>
+          </ul>
         </div>
-
       </div>
-<!--      <div class="clearfix" style="margin-top: 40px;">-->
-<!--        <div  style="float: left;width: 240px;text-align: center;"><img src="@/assets/image/01_partner_logo_06.png" alt=""></div>-->
-<!--        <div  style="float: left;width: 240px;text-align: center;"><img src="@/assets/image/01_partner_logo_07.png" alt=""></div>-->
-<!--        <div  style="float: left;width: 240px;text-align: center;"><img src="@/assets/image/01_partner_logo_11.png" alt=""></div>-->
-<!--        <div  style="float: left;width: 240px;text-align: center;"><img src="@/assets/image/01_partner_logo_12.png" alt=""></div>-->
-<!--        <div  style="float: left;width: 240px;text-align: center;"><img src="@/assets/image/01_partner_logo_13.png" alt=""></div>-->
-<!--      </div>-->
+      <div class="middle3">
+        <img src="../assets/image/图层27.png">
+      </div>
+      <div class="middle4">
+        <img src="../assets/image/优视直播大屏一体机（六合一）.png">
+      </div>
     </div>
-    <div style="clear:both"></div>
+    <div class="foot">
+      <div class="foot1">
+        <div><img src="../assets/image/地址.png" /> 广州市天河区元岗路 616-2</div>
+        <div><img src="../assets/image/电话.png" /> 13926476310</div>
+        <div><img src="../assets/image/邮箱.png"  /> 4578995@qq.com</div>
+        <div>粤ICP备2021008656号-1<img src="../assets/image/01_jinghui.png">粤公网安备 44011602000376号</div>
+      </div>
+      <div class="foot2"><img src="../assets/image/qrcode_for_gh_0addc81770ea_258.png"  /></div>
+    </div>
+    <div class="right1">
+      <div class="right1_1">
+        <img src="../assets/image/qrcode_for_gh_0addc81770ea_430.png"  />
+      </div>
+    </div>
+    <div class="triangle1">
+      <div class="triangle1_1">
+        <img src="../assets/image/矩形18拷贝2.png"  />
+      </div>
+    </div>
+    <div class="right2">18925025105</div>
+    <div class="triangle2">
+      <div class="triangle2_1">
+        <img src="../assets/image/矩形18拷贝2.png"  />
+      </div>
+    </div>
+    <div class="right">
+      <div class="right_1"><img src="../assets/image/微信.png"  /></div>
+      <div class="right_2"><img src="../assets/image/图层34.png"  /></div>
+    </div>
   </div>
 </template>
 
@@ -135,6 +145,32 @@ export default {
         }
     },
     methods: {
+        init() {
+          var vx = document.getElementsByClassName('right_1')[0];
+          var code = document.getElementsByClassName('right1')[0];
+          var triangle1=document.getElementsByClassName('triangle1')[0];
+
+          var tel=document.getElementsByClassName('right_2')[0];
+          var tel1=document.getElementsByClassName('right2')[0];
+          var triangle2=document.getElementsByClassName('triangle2')[0];
+          vx.onmouseover = function () {
+            code.style.display = "block";
+            triangle1.style.display = "block";
+          }
+          vx.onmouseout=function(){
+            code.style.display="none";
+            triangle1.style.display="none";
+          }
+
+          tel.onmouseover = function () {
+            tel1.style.display = "block";
+            triangle2.style.display = "block";
+          }
+          tel.onmouseout=function(){
+            tel1.style.display="none";
+            triangle2.style.display="none";
+          }
+        },
         go_art_path (path, id) {
             this.$router.push({
                 path: path,
@@ -165,23 +201,259 @@ export default {
         },
     },
     created () {
+        this.init()
         this.get_banner_list()
         this.get_table_list()
         this.get_partner()
+
     }
 }
 </script>
 <style lang="scss" scoped>
-  .square {
-    background-color: #00b0e1;
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-  }
-  .hover_blue>div>div {
-    cursor: pointer;
-  }
-  .hover_blue>div>div:hover {
-    box-shadow: 1px 1px 16px #aaecff!important;
-  }
+li {
+  list-style: none;
+  float: left;
+  font-weight: bold;
+}
+
+.top {
+  height: 118px;
+}
+
+.top1 {
+  float: left;
+  margin-top: 32px;
+}
+
+.top2 {
+  float: left;
+  margin-left: 76px;
+  margin-top: 44px;
+}
+
+.top2 li {
+  margin-left: 30px;
+}
+
+.top2_1 {
+
+  color: #D70D19;
+}
+
+.top2_2 {
+  display: inline-block;
+  margin-top: 2px;
+}
+
+.top3 {
+  float: left;
+  margin-left: 50px;
+  margin-top: 38px;
+}
+
+.top3_1 {
+  width: 99px;
+  height: 35px;
+  border: 1px solid #00C657;
+  border-radius: 18px;
+  font-size: 14px;
+  font-family: Source Han Sans CN;
+  font-weight: bold;
+  color: #00C657;
+  text-align: center;
+  line-height: 33px;
+}
+
+.top3_2 {
+  width: 99px;
+  height: 35px;
+  border: 1px solid #D70D19;
+  border-radius: 18px;
+  font-size: 14px;
+  font-family: Source Han Sans CN;
+  font-weight: bold;
+  color: #D70D19;
+  text-align: center;
+  line-height: 33px;
+  margin-left: 4px;
+}
+
+.middle1 {
+  width: 1200px;
+  margin: 82px auto;
+}
+
+.middle1_1 {
+  text-align: center;
+  width: 1200px;
+  height: 24px;
+  font-size: 24px;
+  font-family: Source Han Sans CN;
+  font-weight: bold;
+  color: #323232;
+
+}
+
+.middle1_2 {
+  width: 122px;
+  height: 4px;
+  background-color: #D8271C;
+  border-radius: 2px;
+  margin-top: 10px;
+}
+
+.middle1_3 {
+  width: 1200px;
+  height: 120px;
+  margin-top: 68px;
+  margin-left: 100px;
+}
+
+.middle1_3 li {
+  width: 150px;
+  height: 150px;
+  float: left;
+  list-style: none;
+  font-size: 18px;
+  font-family: Source Han Sans CN;
+  font-weight: bold;
+  color: #323232;
+  margin-left: 100px;
+  text-align: center;
+}
+
+.middle1_31 {
+  height: 71px;
+  vertical-align: middle;
+}
+
+.middle1_32 {
+  margin-top: 26px;
+}
+
+.middle2 {
+  width: 1200px;
+  margin-top: 132px;
+}
+
+.middle2_1 {
+  text-align: center;
+  font-size: 24px;
+  font-family: Source Han Sans CN;
+  font-weight: bold;
+  color: #323232;
+}
+
+.middle2_2 {
+  width: 122px;
+  height: 4px;
+  background-color: #D8271C;
+  border-radius: 2px;
+  margin-top: 10px;
+}
+
+.middle2_3 {
+  height: 688px;
+}
+
+.middle2_3 li {
+  float: left;
+  list-style: none;
+  margin-left: 96px;
+  margin-top: 100px;
+}
+
+.middle2_31 {
+  margin-top: 20px;
+  text-align: center;
+
+  font-size: 18px;
+  font-family: Source Han Sans CN;
+  font-weight: bold;
+  color: #323232;
+
+}
+
+.middle3 {
+  width: 1200px;
+  margin-top: 96px;
+}
+
+.middle4 {
+  width: 1200px;
+}
+
+.foot {
+  width: 1526px;
+  height: 258px;
+  background-color: #1b232e;
+}
+
+.foot1 {
+  float: left;
+  margin-left: 164px;
+  font-size: 18px;
+  color: #cdcecf;
+}
+
+.foot1 div {
+  margin-top: 26px;
+}
+
+.foot2 {
+  float: left;
+  margin-left: 460px;
+  margin-top: 22px;
+}
+
+.right {
+  position: fixed;
+  top: 280px;
+  right: 5px;
+}
+
+.right1 {
+  position: fixed;
+  top: 254px;
+  right: 90px;
+  width: 109px;
+  height: 109px;
+  background-color: #4a4a4a;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 6px;
+  display: none;
+}
+
+.right1_1 {
+  height: 96px;
+  width: 96px;
+  margin-top: 6px;
+}
+
+.triangle1 {
+  position: fixed;
+  top: 298px;
+  right: 70px;
+  display: none;
+}
+.right2 {
+  position: fixed;
+  top: 330px;
+  right: 90px;
+  width: 109px;
+  height: 109px;
+  background-color: #4a4a4a;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 6px;
+  text-align: center;
+  line-height: 120px;
+  color: #ffffff;
+  display: none;
+}
+.triangle2 {
+  position: fixed;
+  top: 374px;
+  right: 70px;
+  display: none;
+}
 </style>

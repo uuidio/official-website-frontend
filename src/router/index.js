@@ -54,8 +54,8 @@ const router = new VueRouter({
             component: news_detail
         },
         {
-          path: '/m/index',
-          component: m_index
+            path: '/m/index',
+            component: m_index
         }
     ]
 })

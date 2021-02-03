@@ -16,7 +16,7 @@
           <div>粤ICP备13090180号 <img src="https://rescdn.www.smartconns.com/assets/img/01_jinghui.png" alt="" style="width: 20px;"> 粤公网安备 44011602000376号 </div>
         </div>
         <div style="float: right;width:200px;margin-right:20px;margin-top: -59px;"><img src="https://rescdn.www.smartconns.com/assets/img/01_footer_code.png" alt="">
-          <br><p style="text-align: center;">极汇科技</p></div>
+          <br><p style="text-align: center;">播丫科技</p></div>
         <div style="clear: both;"></div>
       </div>
     </div>

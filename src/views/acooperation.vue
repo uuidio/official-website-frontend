@@ -69,12 +69,11 @@ export default {
             this.$refs[formName].validate((valid) => {
                 if (valid) {
                     const url = '/jhg/busCooperation'
-                    console.log(self.add_param)
                     this.$api.post(this, url, self.add_param, res => {
                         if (res.data.code == 0) {
                             this.$message.success('提交成功');
                             setTimeout(() => {
-                              this.$refs[formName].resetFields();
+                                this.$refs[formName].resetFields();
                             },1000)
                         } else {
                             this.$message.error('网络错误');

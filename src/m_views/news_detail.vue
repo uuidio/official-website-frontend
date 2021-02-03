@@ -3,7 +3,7 @@
     <div class="block">
       <div class="clearfix" id="containDiv" style="margin-top: 80PX;">
         <div id="position">
-          <a @click="go_path('/news')" style="color: #A9A9A9;cursor: pointer;">极汇资讯</a> >
+          <a @click="go_path('/news')" style="color: #A9A9A9;cursor: pointer;">播丫资讯</a> >
           <span>资讯详情</span>
         </div>
       </div>
