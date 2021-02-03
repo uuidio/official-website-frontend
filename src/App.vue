@@ -1,136 +1,128 @@
 <template>
   <div id="app">
-<!--    <div class="header" style="width: 1200px;margin: 0 auto">-->
-<!--      <div class="logo">-->
-<!--        <img src="@/assets/image/01_logo.png" alt="智能购物车" title="智能购物车" style="width:178px;margin-top: 10px">-->
-<!--      </div>-->
-<!--      <div class="nav_list">-->
-<!--        <ul>-->
-<!--          <li v-for="(item,index) in nav" :class="c_index==index?'active':''" @click="go_path(item.path,index)">-->
-<!--            {{item.name}}-->
-<!--          </li>-->
-<!--        </ul>-->
-<!--      </div>-->
-<!--    </div>-->
     <keep-alive>
       <router-view v-on:listenToChildEvent="showMsgfromChild"/>
     </keep-alive>
-<!--    <div class="footer" style="width: 100%;min-width: 1200px;">-->
-<!--      <div style="width: 1200px;margin: 0 auto;padding: 1px 0 30px 0; " class="clearfix">-->
-<!--        <div class="nav_list" style="color: #fff">-->
-<!--          <div style="margin-top: 30px;">-->
-<!--            <ul>-->
-<!--              <li v-for="(item,index) in nav" :key="index" :class="c_index==index?'active':''"-->
-<!--                  @click="go_path(item.path,index)">{{item.name}}-->
-<!--              </li>-->
-<!--            </ul>-->
-<!--          </div>-->
-<!--          <div style="clear: both;"></div>-->
-<!--          <div class="info" style="margin-top: 30px;margin-left: 30px;width:1200px;position: relative;">-->
-<!--            <div style="float: left;">-->
-<!--              <div><img src="https://rescdn.www.smartconns.com/assets/img/01_footer_address.png" alt=""-->
-<!--                        style="width: 20px;margin-top: -5px;vertical-align: middle;"> <span>广州天河区元岗路616-3</span>-->
-<!--              </div>-->
-<!--              <div><img src="https://rescdn.www.smartconns.com/assets/img/01_footer_tel.png" alt=""-->
-<!--                        style="width: 20px;margin-top: -5px;vertical-align: middle;"> <span>Tel：020-3203 3815</span>-->
-<!--              </div>-->
-<!--              <div><img src="https://rescdn.www.smartconns.com/assets/img/01_footer_email.png" alt=""-->
-<!--                        style="width: 20px;margin-top: -5px;vertical-align: middle;">-->
-<!--                <span>service@smartconns.com</span></div>-->
-<!--              <div>粤ICP备2021008656号-1 <img src="https://rescdn.www.smartconns.com/assets/img/01_jinghui.png" alt=""-->
-<!--                                       style="width: 16px;margin-top: -4px;vertical-align: middle;"> <span>粤公网安备 44011602000376号</span>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--            <div style="float: right;width:200px;margin-right:20px;margin-top: -59px;"><img-->
-<!--              src="https://rescdn.www.smartconns.com/assets/img/01_footer_code.png" alt="">-->
-<!--              <br>-->
-<!--              <p style="text-align: center;">播丫科技</p></div>-->
-<!--            <div style="color: #666;position: absolute;top: -69px;right: 396px;"><span>友情链接</span> <span-->
-<!--              @click="post100" class="pointme" style="color: #333;margin-left: 16px;cursor: pointer;">快递100</span></div>-->
-<!--            <div style="clear: both;"></div>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </div>-->
+    <div class="foot">
+      <div style="width: 1200px;margin: 0 auto">
+        <div class="foot1">
+          <div><img src="./assets/image/地址.png"/> 广州市天河区元岗路 616-2</div>
+          <div><img src="./assets/image/电话.png"/> 13926476310</div>
+          <div><img src="./assets/image/邮箱.png"/> 4578995@qq.com</div>
+          <div>粤ICP备2021008656号-1<img src="./assets/image/01_jinghui.png">粤公网安备 44011602000376号</div>
+        </div>
+        <div class="foot2"><img src="./assets/image/qrcode_for_gh_0addc81770ea_258.png"/></div>
+      </div>
+    </div>
+    <div class="info">
+      <div class="right">
+        <div class="right_1">
+          <img src="./assets/image/微信.png"/>
+          <div class="erweima">
+            <div class="right1">
+              <div class="right1_1">
+                <img src="./assets/image/qrcode_for_gh_0addc81770ea_430.png"/>
+              </div>
+            </div>
+            <div class="triangle1">
+              <div class="triangle1_1">
+                <img src="./assets/image/矩形18拷贝2.png"/>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right_2">
+          <img src="./assets/image/图层34.png"/>
+          <div class="my_phone">
+            <div class="right2">18925025105</div>
+            <div class="triangle2">
+              <div class="triangle2_1">
+                <img src="./assets/image/矩形18拷贝2.png"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 <script>
 
-export default {
+  export default {
     components: {},
-    data () {
-        return {
-            nav: [
-                {
-                    name: '首页',
-                    path: '/index'
-                },
-                {
-                    name: '智能设备',
-                    path: '/smart'
-                },
-                {
-                    name: '解决方案',
-                    path: '/solution'
-                },
-                {
-                    name: '广告资源',
-                    path: '/ad'
-                },
-                {
-                    name: '商务合作',
-                    path: '/acooperation'
-                },
-                {
-                    name: '新闻资讯',
-                    path: '/news'
-                },
-                {
-                    name: '关于我们',
-                    path: '/about'
-                },
-                // { name: '新闻资讯详情', path: '/news_detail'}
-            ],
-            c_index: 0
-        }
+    data() {
+      return {
+        nav: [
+          {
+            name: '首页',
+            path: '/index'
+          },
+          {
+            name: '智能设备',
+            path: '/smart'
+          },
+          {
+            name: '解决方案',
+            path: '/solution'
+          },
+          {
+            name: '广告资源',
+            path: '/ad'
+          },
+          {
+            name: '商务合作',
+            path: '/acooperation'
+          },
+          {
+            name: '新闻资讯',
+            path: '/news'
+          },
+          {
+            name: '关于我们',
+            path: '/about'
+          },
+          // { name: '新闻资讯详情', path: '/news_detail'}
+        ],
+        c_index: 0
+      }
     },
     methods: {
-        go_path (path, index) {
-            this.c_index = index
-            this.$router.push({ path: path })
-        },
-        showMsgfromChild (index) {
-            this.c_index = index
-        },
-        post100 () {
-            window.open('https://api.kuaidi100.com/', '_blank')
-        },
-        pc_or_mobile () {
-            if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
-                return '移动'
-            } else if (/(Android)/i.test(navigator.userAgent)) {
-                return '移动'
-            } else {
-                return 'pc'
-            }
-        },
+      go_path(path, index) {
+        this.c_index = index
+        this.$router.push({path: path})
+      },
+      showMsgfromChild(index) {
+        this.c_index = index
+      },
+      post100() {
+        window.open('https://api.kuaidi100.com/', '_blank')
+      },
+      pc_or_mobile() {
+        if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+          return '移动'
+        } else if (/(Android)/i.test(navigator.userAgent)) {
+          return '移动'
+        } else {
+          return 'pc'
+        }
+      },
     },
     computed: {},
     watch: {},
-    created () {
-        $.each(this.nav, (index, ele) => {
-            if (this.$route.path.indexOf(ele.path) != -1) {
-                this.c_index = index
-            }
-        })
-        this.$store.commit('pc_or_mobile', this.pc_or_mobile())
+    created() {
+      $.each(this.nav, (index, ele) => {
+        if (this.$route.path.indexOf(ele.path) != -1) {
+          this.c_index = index
+        }
+      })
+      this.$store.commit('pc_or_mobile', this.pc_or_mobile())
     },
-    mounted () {
-        // window.onresize = function () {
-        //     localStorage.window_width = document.body.clientWidth
-        // }
+    mounted() {
+      // window.onresize = function () {
+      //     localStorage.window_width = document.body.clientWidth
+      // }
     }
-}
+  }
 </script>
 <style>
   html, body, div, span, applet, object, iframe,
@@ -256,39 +248,90 @@ export default {
 
 </style>
 <style lang="scss" scoped>
-  .pointme:hover {
-    color: #fff !important;
+  .foot {
+    height: 258px;
+    background-color: #1b232e;
   }
 
-  .footer {
-    background-color: #959595;
-    border-bottom: #333 solid 1px;
-
-    .logo {
-      margin-top: 30px;
-      float: left;
-      width: 230px;
-    }
+  .foot1 {
+    float: left;
+    font-size: 18px;
+    color: #cdcecf;
   }
 
-  .footer .nav_list {
-    width: 626px;
-
-    li {
-      color: #ffffff;
-      cursor: pointer;
-      margin-left: 30px;
-      float: left;
-      line-height: 33px;
-    }
+  .foot1 div {
+    margin-top: 26px;
   }
 
-  .footer .active {
-    border-bottom: #fff solid 2px;
-    color: #fff;
+  .foot2 {
+    float: left;
+    margin-left: 460px;
+    margin-top: 22px;
   }
 
-  .info {
-    line-height: 41px;
+  .right {
+    position: fixed;
+    top: 280px;
+    right: 5px;
+  }
+
+  .right1 {
+    cursor: pointer;
+    position: fixed;
+    top: 254px;
+    right: 90px;
+    width: 130px;
+    height: 130px;
+    background-color: #4a4a4a;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 6px;
+    /*display: none;*/
+  }
+  .erweima,.my_phone {
+    display: none;
+  }
+  .right_1,.right_2 {
+    cursor: pointer;
+  }
+  .right_1:hover>.erweima,.right_2:hover>.my_phone{
+    display: block!important;
+  }
+  .right1_1 {
+    height: 120px;
+    width: 120px;
+    margin-top: 4px;
+  }
+  .right1_1 img{
+    width: 122px;
+    height: 122px;
+    margin-left: 3px;
+  }
+  .triangle1 {
+    position: fixed;
+    top: 298px;
+    right: 70px;
+    /*display: none;*/
+  }
+
+  .right2 {
+    position: fixed;
+    top: 330px;
+    right: 90px;
+    width: 130px;
+    height: 130px;
+    background-color: #4a4a4a;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 6px;
+    text-align: center;
+    line-height: 120px;
+    color: #ffffff;
+    /*display: none;*/
+  }
+
+  .triangle2 {
+    position: fixed;
+    top: 374px;
+    right: 70px;
+    /*display: none;*/
   }
 </style>

@@ -1,30 +1,40 @@
 <template>
   <div>
-    <div class="center">
-      <div class="top" style="width: 1200px;margin: 0 auto">
+    <div class="center" style="width: 1200px;margin: 0 auto">
+      <div class="top" >
         <div class="top1">
-          <img src="../assets/image/图层25拷贝.png" />
+          <img src="../assets/image/图层25拷贝.png">
         </div>
         <div class="top2">
           <ul>
             <li class="top2_1">首页</li>
-            <li>播丫产品 <img src="../assets/image/矢量智能对象.png" /></li>
-            <li>解决方案</li>
-            <li>商务合作</li>
-            <li>新闻资讯</li>
-            <li>疑问解答</li>
-            <li>关于播丫</li>
+<!--            <li>播丫产品 <img src="../assets/image/矢量智能对象.png" /></li>-->
+<!--            <li>解决方案</li>-->
+<!--            <li>商务合作</li>-->
+<!--            <li>新闻资讯</li>-->
+<!--            <li>疑问解答</li>-->
+<!--            <li>关于播丫</li>-->
           </ul>
         </div>
-        <div class="top3">
+        <div class="top3" style="float: right;">
           <ul>
-            <li class="top3_1">登录</li>
-            <li class="top3_2">免费试用</li>
+            <li class="top3_1" @click="go_url('https://api.boyo.tv/admin/live/')">登录</li>
+            <li class="top3_2" @click="go_url('https://api.boyo.tv/admin/live/passport/register')" style="margin-left: 20px">免费试用</li>
           </ul>
         </div>
       </div>
       <div>
-        <img src="../assets/image/图层26.png" />
+        <el-carousel height="484px" arrow="always" trigger="click">
+          <el-carousel-item>
+            <img src="../assets/image/banner1.jpg" alt="">
+          </el-carousel-item>
+          <el-carousel-item>
+            <img src="../assets/image/banner2.jpg" alt="">
+          </el-carousel-item>
+          <el-carousel-item>
+            <img src="../assets/image/banner3.jpg" alt="">
+          </el-carousel-item>
+        </el-carousel>
       </div>
       <div class="middle1">
         <div class="middle1_1">优视直播四大利器</div>
@@ -97,35 +107,7 @@
         <img src="../assets/image/优视直播大屏一体机（六合一）.png">
       </div>
     </div>
-    <div class="foot">
-      <div class="foot1">
-        <div><img src="../assets/image/地址.png" /> 广州市天河区元岗路 616-2</div>
-        <div><img src="../assets/image/电话.png" /> 13926476310</div>
-        <div><img src="../assets/image/邮箱.png"  /> 4578995@qq.com</div>
-        <div>粤ICP备2021008656号-1<img src="../assets/image/01_jinghui.png">粤公网安备 44011602000376号</div>
-      </div>
-      <div class="foot2"><img src="../assets/image/qrcode_for_gh_0addc81770ea_258.png"  /></div>
-    </div>
-    <div class="right1">
-      <div class="right1_1">
-        <img src="../assets/image/qrcode_for_gh_0addc81770ea_430.png"  />
-      </div>
-    </div>
-    <div class="triangle1">
-      <div class="triangle1_1">
-        <img src="../assets/image/矩形18拷贝2.png"  />
-      </div>
-    </div>
-    <div class="right2">18925025105</div>
-    <div class="triangle2">
-      <div class="triangle2_1">
-        <img src="../assets/image/矩形18拷贝2.png"  />
-      </div>
-    </div>
-    <div class="right">
-      <div class="right_1"><img src="../assets/image/微信.png"  /></div>
-      <div class="right_2"><img src="../assets/image/图层34.png"  /></div>
-    </div>
+
   </div>
 </template>
 
@@ -145,31 +127,34 @@ export default {
         }
     },
     methods: {
-        init() {
-          var vx = document.getElementsByClassName('right_1')[0];
-          var code = document.getElementsByClassName('right1')[0];
-          var triangle1=document.getElementsByClassName('triangle1')[0];
-
-          var tel=document.getElementsByClassName('right_2')[0];
-          var tel1=document.getElementsByClassName('right2')[0];
-          var triangle2=document.getElementsByClassName('triangle2')[0];
-          vx.onmouseover = function () {
-            code.style.display = "block";
-            triangle1.style.display = "block";
-          }
-          vx.onmouseout=function(){
-            code.style.display="none";
-            triangle1.style.display="none";
-          }
-
-          tel.onmouseover = function () {
-            tel1.style.display = "block";
-            triangle2.style.display = "block";
-          }
-          tel.onmouseout=function(){
-            tel1.style.display="none";
-            triangle2.style.display="none";
-          }
+        go_url(url){
+          window.location.href = url
+        },
+        init () {
+            // var vx = document.getElementsByClassName('right_1')[0];
+            // var code = document.getElementsByClassName('right1')[0];
+            // var triangle1 = document.getElementsByClassName('triangle1')[0];
+            //
+            // var tel = document.getElementsByClassName('right_2')[0];
+            // var tel1 = document.getElementsByClassName('right2')[0];
+            // var triangle2 = document.getElementsByClassName('triangle2')[0];
+            // vx.onmouseover = function () {
+            //     code.style.display = 'block';
+            //     triangle1.style.display = 'block';
+            // }
+            // vx.onmouseout = function () {
+            //     code.style.display = 'none';
+            //     triangle1.style.display = 'none';
+            // }
+            //
+            // tel.onmouseover = function () {
+            //     tel1.style.display = 'block';
+            //     triangle2.style.display = 'block';
+            // }
+            // tel.onmouseout = function () {
+            //     tel1.style.display = 'none';
+            //     triangle2.style.display = 'none';
+            // }
         },
         go_art_path (path, id) {
             this.$router.push({
@@ -189,7 +174,7 @@ export default {
                 this.data_list = res.data.data.slice(0,3)
             })
         },
-        get_partner() {
+        get_partner () {
             const url = '/jhg/logo/get'
             this.$api.get(this, url, {}, res => {
                 this.partner_list = res.data.data
@@ -197,15 +182,13 @@ export default {
         },
         go_path (path) {
             this.$router.push({ path: path })
-
         },
     },
     created () {
         this.init()
-        this.get_banner_list()
-        this.get_table_list()
-        this.get_partner()
-
+        // this.get_banner_list()
+        // this.get_table_list()
+        // this.get_partner()
     }
 }
 </script>
@@ -257,11 +240,9 @@ li {
   border: 1px solid #00C657;
   border-radius: 18px;
   font-size: 14px;
-  font-family: Source Han Sans CN;
-  font-weight: bold;
   color: #00C657;
   text-align: center;
-  line-height: 33px;
+  line-height: 35px;
 }
 
 .top3_2 {
@@ -270,11 +251,10 @@ li {
   border: 1px solid #D70D19;
   border-radius: 18px;
   font-size: 14px;
-  font-family: Source Han Sans CN;
   font-weight: bold;
   color: #D70D19;
   text-align: center;
-  line-height: 33px;
+  line-height: 35px;
   margin-left: 4px;
 }
 
@@ -295,6 +275,7 @@ li {
 }
 
 .middle1_2 {
+  margin: 0 auto;
   width: 122px;
   height: 4px;
   background-color: #D8271C;
@@ -306,7 +287,7 @@ li {
   width: 1200px;
   height: 120px;
   margin-top: 68px;
-  margin-left: 100px;
+  margin-left: 51px;
 }
 
 .middle1_3 li {
@@ -345,6 +326,7 @@ li {
 }
 
 .middle2_2 {
+  margin: 0 auto;
   width: 122px;
   height: 4px;
   background-color: #D8271C;
