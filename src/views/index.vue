@@ -7,7 +7,7 @@
         </div>
         <div class="top2">
           <ul>
-            <li class="top2_1">首页</li>
+<!--            <li class="top2_1">首页</li>-->
 <!--            <li>播丫产品 <img src="../assets/image/矢量智能对象.png" /></li>-->
 <!--            <li>解决方案</li>-->
 <!--            <li>商务合作</li>-->
@@ -18,26 +18,26 @@
         </div>
         <div class="top3" style="float: right;">
           <ul>
-            <li class="top3_1" @click="go_url('https://api.boyo.tv/admin/live/')">登录</li>
-            <li class="top3_2" @click="go_url('https://api.boyo.tv/admin/live/passport/register')" style="margin-left: 20px">免费试用</li>
+            <li class="top3_1" @click="go_url('https://api.boyo.tv/admin/live/')" style="cursor: pointer">登录</li>
+            <li class="top3_2" @click="go_url('https://api.boyo.tv/admin/live/passport/register')" style="margin-left: 20px;cursor: pointer">免费试用</li>
           </ul>
         </div>
       </div>
       <div>
         <el-carousel height="484px" arrow="always" trigger="click">
           <el-carousel-item>
+            <img src="../assets/image/banner3.jpg" alt="">
+          </el-carousel-item>
+          <el-carousel-item>
             <img src="../assets/image/banner1.jpg" alt="">
           </el-carousel-item>
           <el-carousel-item>
             <img src="../assets/image/banner2.jpg" alt="">
           </el-carousel-item>
-          <el-carousel-item>
-            <img src="../assets/image/banner3.jpg" alt="">
-          </el-carousel-item>
         </el-carousel>
       </div>
       <div class="middle1">
-        <div class="middle1_1">优视直播四大利器</div>
+        <div class="middle1_1">播丫直播四大利器</div>
         <div class="middle1_2"></div>
         <div class="middle1_3">
           <ul>
@@ -99,9 +99,6 @@
             </li>
           </ul>
         </div>
-      </div>
-      <div class="middle3">
-        <img src="../assets/image/图层27.png">
       </div>
       <div class="middle4">
         <img src="../assets/image/优视直播大屏一体机（六合一）.png">

@@ -18,13 +18,13 @@ const router = new VueRouter({
     routes: [
         {
             path: '/',
-            redirect: '/index',
+            // redirect: '/index',
             component: index
         },
-        {
-            path: '/index',
-            component: index
-        },
+        // {
+        //     path: '/index',
+        //     component: index
+        // },
         {
             path: '/smart',
             component: smart
