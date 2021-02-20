@@ -6,7 +6,7 @@
     <div class="foot">
       <div style="width: 1200px;margin: 0 auto">
         <div class="foot1">
-          <div><img src="./assets/image/地址.png"/> 广州市天河区元岗路 616-2  <a href="https://api.kuaidi100.com/" target="_blank" style="margin-left: 50px;float: right;">快递100</a></div>
+          <div><img src="./assets/image/地址.png"/> 广州市天河区元岗路 616-2  <a href="https://api.kuaidi100.com/" target="_blank" style="margin-left: 50px;float: right;color: #fff">快递100</a></div>
           <div><img src="./assets/image/电话.png"/> 18925025105</div>
           <div><img src="./assets/image/邮箱.png"/> 4578995@qq.com</div>
           <div>@2020-至今 播丫 粤ICP备2021008656号-1  版权所有 © 广州播丫科技有限公司</div>
